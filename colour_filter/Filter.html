@@ -1,0 +1,48 @@
+<html>
+<head>
+  <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js" >
+  </script>
+<style>
+body{
+  background-color:#faf2ac;
+}
+h1{
+  font-family:Times New Roman;
+  color: #6b1807;
+  margin:10px;
+
+}
+#h2{
+  background-color:#c9a349;
+}
+canvas{
+  height:300px;
+  width:400px;
+  border:1px solid black;
+}
+hr{
+  border:1px solid black;
+}
+</style>
+
+</head>
+  <body>
+    <script src="code.js">
+    </script>
+
+<h1> Filter Fun</h1>
+<hr>
+<h2 id =h2> <marquee> Welcome to webpage!!</marquee></h2>
+<hr>
+<h2> <i>upload your image and apply filters</h2></i>
+<p><canvas id ="can">
+  </canvas></p>
+<h3> upload image</h3>
+<p> <input type="file" multiple="false" accept="image/*" id="finput" onchange="upload()"></p>
+<p><h3> choose filters:</h3> <input type="button" value="make Grayscale" id ="gray" onclick="dogray()">
+<input type="button" value="Red" id="rd" onclick="dored()">
+<input type="button" value="Tricolor" id="tri" onclick="tricolor()">
+</p>
+<p> <input type="button" value="Reset" id="reset" onclick="doreset()"></p>
+</body>
+</html>
